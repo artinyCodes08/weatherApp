@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="style.css" />
 
     <div id="content">
+      <div class="row">
       <div class="container text-center">
         <div class="row align-items-center">
-          <div class="col-6">
+          <div class="col-md-6">
             <form id="searchForm" action="#">
               <div class="InputContainer">
                 <input
@@ -32,40 +33,46 @@
               </div>
             
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <button class="search">
               <span> Search</span>
             </button>
           </div></form>
         </div>
       </div>
+    </div>
+  <div class="row">
       <div class="container text-center">
-        <div class="row align-items-center">
-          <div class="col">
-            <h2>Lagos, Nigeria</h2>
+        <div class="row align-items-center">  
+          <div class="col-md-6 ps-4 ">
+            <h2 class="pt-4 ">Lagos, Nigeria</h2>
             <h3>
               <span id="date">Monday May 01 </span><br />
               <span id="time">2:34</span> <br />
               <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" id="weatherIcon">
-          </div>
-          <div class="col"> 
+             </h3>
+               </div>
+          <div class="col-md-6 "> 
             <div class="temperature">
-              <p>
-                <span id="temp" class="degree">31</span>
-                <span class="temp">
+              <p class="">
+                <div class="row"><ul>
+                  <div class="col-md-6 mb-2">
+                <span id="temp" class="degree">31</span></div>
+              <div class="col-md-6"> <span class="temp">
                   <a href="#" id="celcius" class="active">C°</a>|<a href="#" id="farenheit">F°</a>
                 </span>
+              </div> </div>
                 <br />
-                <ul class="thunderstorm">
+                <div class="thunderstorm">
                   <li>Humidity : <span id="humidity">28</span>%</li>
                   <li>Wind Speed : <span id="speed">50</span>km/hr</li>
                   <li>Description : <span id="description"></span></li>
-                </ul>
+                </div></ul>
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </div></div>
       <hr />
       
       <div  class="container text-center" id="forecast">
