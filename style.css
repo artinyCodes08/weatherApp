@@ -232,12 +232,24 @@ a.active.dark-mode {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
-@media (max-width:900px){
-  h2, h3, ul, li{
+@media (max-width: 900px) {
+  h2,
+  h3,
+  ul,
+  li {
     text-align: center;
-    
   }
-
-}
+  h3 {
+    margin-bottom: 0px;
+  }
   
-
+  .degree {
+    font-size: 80px;
+    padding-bottom: 0px;
+  }
+  .temp {
+    position: relative;
+    left: 80px;
+    top: -70px;
+  }
+}
